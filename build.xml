@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="file-transport-copy" name="File Transport Connectivity plugin">
+	<presetdef name="javac">
+		<javac includeantruntime="false" />
+	</presetdef>
+
+
+	<property environment="env"/>
+	<property name="APAMA_HOME" location="${env.APAMA_HOME}"/>
+	<fail unless="env.APAMA_HOME" message="Please run the bin/apama_env script before attempting to build this sample."/>
+
+	<property name="file-transport-source-dir" location="."/>
+	<property name="file-transport-output-dir" location="${file-transport-source-dir}/build-output"/>
+	<property name="file-transport-output-jar" location="${file-transport-output-dir}/file-transport-plugins.jar"/>
+
+	<!-- Compiles .class files -->
+	<target name="file-transport-compile">
+		<mkdir dir="${file-transport-output-dir}/work"/>
+		<javac srcdir="${file-transport-source-dir}/src/" destdir="${file-transport-output-dir}/work" debug="true">
+			<classpath>
+				<pathelement path="${env.APAMA_HOME}/lib/connectivity-plugins-api.jar"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<!-- Make the jar from .class files -->
+	<target name="file-transport-jars" depends="file-transport-compile">
+		<jar jarfile="${file-transport-output-jar}">
+			<fileset dir="${file-transport-output-dir}/work"/>
+		</jar>
+	</target>
+	
+	<target name="file-transport-copy" description="Build plugins and copy to APAMA_WORK/lib" depends="file-transport-jars">
+		<copy file="${file-transport-output-jar}" todir="${env.APAMA_WORK}/lib/"/>
+	</target>
+
+	<!-- Erase everything we built -->
+	<target name="clean">
+		<delete dir="${file-transport-output-dir}"/>
+	</target>
+</project>
