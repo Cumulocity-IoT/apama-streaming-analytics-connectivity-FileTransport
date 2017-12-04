@@ -1,5 +1,5 @@
 # apama-streaming-analytics-connectivity-FileTransport
-Java based Connectivity Transport for reading/writing to files with [Apama](http://www.apamacommunity.com/).
+Java based Connectivity Transport for reading/writing to files for use with [Apama](http://www.apamacommunity.com/).
 
 ## Description
 File Transport Connectivity Plugin. Will operate on files line by line, either sending each line as a message towards the host or writing each message sent towards the transport. For more information on the Apama Connectivity Framework, as well as Apama in general, please see [the community website](http://www.apamacommunity.com/).
