@@ -1,11 +1,11 @@
 # apama-streaming-analytics-connectivity-FileTransport
-Java based Connectivity Transport for reading/writing to files for use with [Apama](http://www.apamacommunity.com/).
+Java based Connectivity Transport for reading/writing to files for use with [Apama](https://www.apamacommunity.com/).
 
 ## Description
-File Transport Connectivity Plugin. Will operate on files line by line, either sending each line as a message towards the host or writing each message sent towards the transport. For more information on the Apama Connectivity Framework, as well as Apama in general, please see [the community website](http://www.apamacommunity.com/).
+File Transport Connectivity Plugin. Will operate on files line by line, either sending each line as a message towards the host or writing each message sent towards the transport. For more information on the Apama Connectivity Framework, as well as Apama in general, please see [the community website](https://www.apamacommunity.com/).
 
 ## Set-up
-First, ensure you have an install of the Apama engine; a free edition is available at [the community website](http://www.apamacommunity.com/). This plugin assumes the user has familiarity with the basic structure of the install, more information of which can also be found on the community site.
+First, ensure you have an install of the Apama engine; a free edition is available at [the community website](https://www.apamacommunity.com/). This plugin assumes the user has familiarity with the basic structure of the install, more information of which can also be found on the community site.
 
 Running and building of the sample requires access to the Correlator and Apama command line tools. To ensure that the environment is configured correctly for Apama, all the commands below should be executed from an Apama Command Prompt, or from a shell or command prompt where the bin\apama_env script has been run (or sourced on Unix).
 
