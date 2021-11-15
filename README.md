@@ -36,6 +36,7 @@ These should have already been copied to APAMA_WORK/lib where the correlator wil
 
 # Authors
 Callum Attryde
+
 John Heath
 
 ## License
