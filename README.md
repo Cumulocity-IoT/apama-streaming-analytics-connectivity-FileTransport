@@ -34,13 +34,8 @@ A successful build will produce output files for the File Transport:
 
 These should have already been copied to APAMA_WORK/lib where the correlator will load them from.
 
-# Authors
-Callum Attryde
-
-John Heath
-
 ## License
-Copyright (c) 2017-2019, 2021 Software AG, Darmstadt, Germany and/or its licensors
+Copyright (c) 2017-present Cumulocity GmbH
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 file except in compliance with the License. You may obtain a copy of the License at
@@ -51,6 +46,6 @@ either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 
 ______________________
-These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the main project.
+These tools are provided as-is and without warranty or support. They do not constitute part of the Cumulocity products. Users are free to use, fork and modify them, subject to the license agreement. While Cumulocity welcomes contributions, we cannot guarantee to include every contribution in the main project.
 _____________
-Contact us at [TECHcommunity](mailto:technologycommunity@softwareag.com?subject=Github/SoftwareAG) if you have any questions.
+Contact us at https://apamacommunity.com if you have any questions.
