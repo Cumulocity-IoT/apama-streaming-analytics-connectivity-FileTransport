@@ -18,13 +18,13 @@ But if you do not have access to ANT, it will need to be built manually:
 
 For Linux:
 > mkdir build_output
-> javac -cp $APAMA_HOME/lib/connectivity-plugins-api.jar -d build_output src/com/softwareag/samples/FileTransport.java
+> javac -cp $APAMA_HOME/lib/connectivity-plugins-api.jar -d build_output src/com/apama/samples/FileTransport.java
 > jar -cf build_output/file-transport-plugins.jar -C build_output .
 > cp build_output/file-transport-plugins.jar $APAMA_WORK/lib/
 
 For Windows:
 > mkdir build_output
-> javac -cp %APAMA_HOME%/lib/connectivity-plugins-api.jar -d build_output src/com/softwareag/samples/FileTransport.java
+> javac -cp %APAMA_HOME%/lib/connectivity-plugins-api.jar -d build_output src/com/apama/samples/FileTransport.java
 > jar -cf build_output\file-transport-plugins.jar -C build_output .
 > copy build_output\file-transport-plugins.jar %APAMA_WORK%\lib\
 
@@ -35,7 +35,8 @@ A successful build will produce output files for the File Transport:
 These should have already been copied to APAMA_WORK/lib where the correlator will load them from.
 
 ## License
-Copyright (c) 2017-present Cumulocity GmbH
+Copyright (c) 2017-2019, 2021 Cumulocity GmbH, Duesseldorf, Germany and/or its affiliates and/or their licensors.
+Copyright (c) 2024 Cumulocity GmbH. The name Cumulocity GmbH and all Cumulocity GmbH product names are either trademarks or registered trademarks of Cumulocity GmbH and/or its subsidiaries and/or its affiliates and/or their licensors. Other company and product names mentioned herein may be trademarks of their respective owners. 
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 file except in compliance with the License. You may obtain a copy of the License at
@@ -46,6 +47,6 @@ either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 
 ______________________
-These tools are provided as-is and without warranty or support. They do not constitute part of the Cumulocity products. Users are free to use, fork and modify them, subject to the license agreement. While Cumulocity welcomes contributions, we cannot guarantee to include every contribution in the main project.
+These tools are provided as-is and without warranty or support. They do not constitute part of the the product suite. Users are free to use, fork and modify them, subject to the license agreement. While we welcome contributions, we cannot guarantee to include every contribution in the main project.
 _____________
-Contact us at https://apamacommunity.com if you have any questions.
+Contact us at [Apama community](https://apamacommunity.com) if you have any questions.
